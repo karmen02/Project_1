@@ -3,12 +3,12 @@ const http = require("http");
 const url = require("url");
 //lisame mooduli failitee kasutamiseks
 const path = require("path");
-const pageBegin = '<!DOCTYPE html>\n<html lang="et">\n<head>\n\t<meta charset="utf-8">\n\t<title>Andrus Rinde, veebiprogrammeerimine</title>\n</head>\n<body>';
+const pageBegin = '<!DOCTYPE html>\n<html lang="et">\n<head>\n\t<meta charset="utf-8">\n\t<title>Karmen Kõiv, veebiprogrammeerimine</title>\n</head>\n<body>';
 const fs = require("fs");
 const dateEt = require("./src/dateTimeET");
 const textRef = "txt/vanasonad.txt";
 const pageBody = '\n\t<h1>Karmen Kõiv, veebiprogrammeerimine</h1>\n\t<p>See leht on tehtud <a href="https://www.tlu.ee/dt">Tallinna Ülikooli</a> veebiprogrammeerimise kursusel ja ei sisalda mõistlikku sisu.</p><p>Käsitleme HTML keelt ja siis Node.Js programmeerimiskeelt.</p>\n\t<hr>';
-const pageBanner ='<img src="vp_banner_2025_ID.jpg" alt="kursuse bأ¤nner">';
+const pageBanner ='<img src="vp_banner_2025_ID.jpg" alt="kursuse bänner">';
 const pageEnd = '\n</body>\n</html>';
 
 http.createServer(function(req, res){
